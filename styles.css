@@ -1,0 +1,457 @@
+/* Web Body*/
+/*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
+}*/
+/*============Body===========*/
+*{
+    box-sizing: border-box;
+}
+body {
+    
+    /*display: block;*/
+    background-color: rgb(68, 75, 77);
+    font-size: 13px;
+    }
+
+
+/*=============header===========*/
+.header{
+    background-color:rgb(4,4,34);
+    border-radius: 6px;
+    margin-top: 0;
+    padding: 0;
+    flex: 1;
+}
+/*==============logo website========*/
+.logo img{
+    float: left;
+    height: 70px;
+    width: 100px;
+    
+}
+/*============The Navigation Menu Container==============*/
+#navmenu {
+    display: block;
+    width: 900px;
+    margin: 0 auto;
+    background-color:rgb(4,4,34);
+    
+}
+
+#navmenu ul{
+    margin: 0;
+    padding: 0;
+    list-style:none;
+}
+
+#navmenu:before,
+#navmenu:after{
+    content: '';
+    display: table;
+}
+#navmenu:after{
+    clear:both;
+} 
+/*==================The Navigation Main Menu=============== */
+#navmenu li{
+    float: left;
+    box-shadow: 1px 0 0 #444;
+    position: relative;
+}
+#navmenu a{
+    float: left;
+    padding: 12px 30px;
+    text-transform: uppercase;
+    font-family: sans-serif;
+    text-decoration: none;
+    color: #fff;
+}
+#navmenu li:hover > a{
+    color: #fafafa;;
+    background:#262626;
+
+}
+#navmenu ul{
+    margin: 20px 0 0 0;
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
+    top: 46px;
+    left: 0;
+    z-index: 1;
+    background:#262626;
+    border-radius: 3px;
+    transition: all .3s ease-in-out;
+}
+#navmenu li:hover > ul{
+    opacity: 1;
+    visibility: visible;
+    margin: 0;
+}
+#navmenu ul ul {
+    top:0;
+    left: 215px;
+    margin: 0 0 0 20px;
+}
+#nav ul li{
+    float: none;
+    display: block;
+    border: 0;
+    box-shadow: 0 1px 0 #2e2e2e 0 2px 0 #666;
+}
+#navmenu ul li:last-child{
+    box-shadow: none;
+}
+#navmenu ul a{
+    padding: 10px;
+    width: 200px;
+    display: block;
+    white-space: nowrap;
+    float: none;
+    text-transform: uppercase;
+}
+#navmenu ul a:hover{
+    background-color:#0a0a0a;
+}
+#navmenu ul li:first-child > a{
+    border: 3px 3px 0 0;
+}
+#navmenu ul li:first-child > a:after{
+    content: '';
+    position: absolute;
+    left: 40px;
+    top: -6px;
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+    border-bottom: 6px solid #fff;
+}
+#navmenu ul ul li:first-child a:after{
+    border-bottom: 6px solid transparent;
+    border-top: 6px solid transparent;
+    border-right: 6px solid #fff;
+    left: -6px;
+    top: 50%;
+    margin-top: -6px;
+    border-left: 0;
+}
+#navmenu ul li:first-child a:hover:after{
+    border-bottom: #fff;
+}
+#navmenu ul ul li:first-child a:hover:after{
+    border-right-color: #fff;
+    border-bottom-color: transparent;
+}
+#navmenu ul li:last-child > a{
+    border-radius: 0 0 3px 3px;
+}
+
+/*=================Konten=================*/
+.container{
+   display: flex;
+    background-color: #525351/*#afaaaa*/;
+    min-height: 150px;
+    flex: 1;
+  
+}
+/*=============Homepage============*/
+.home-about-me{
+    flex:1;
+    width: 600px;
+    height: 1000px;
+}
+.galeri-home{
+    margin: 5px;
+    border: 1px solid #ccc;
+    float: left;
+    width: 180px;
+    
+}
+galeri-home:hover{
+    border: 1px solid #777;
+}
+.galeri-home img{
+    width: 100%;
+    height: auto;
+}
+.galeri-desc{
+    padding: 15px;
+    text-align: center;
+}
+
+article{
+    margin: 0 auto;
+    float: none;
+    height: 600px;  
+    background-color:whitesmoke;
+    flex: 1;
+    
+}
+.konten-home img{
+    float: left;
+    border-radius: 50% ;
+    border:1px solid rgb(20, 20, 20);
+    
+    
+}
+
+article h1{
+    font-family: Arial, sans-serif;
+    text-align: left;
+    color: #161515;
+}
+.about-me-title{
+    text-align: center;
+    font-family: verdana;
+    font-size: 2em;
+    color: #05406d;
+}
+.ltr-jan{
+    text-align: justify;
+    font-size: 14px;
+}
+.nama{
+    font-size: 1.5em;
+    color: #3B5998;
+}
+article p{
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    color: #666;
+    
+}
+/*==============Contact Page===============*/
+.contact-container{
+    display: flex;
+    min-height: 150px;
+    flex: 1;
+
+}
+.contact{
+    display: grid;
+      
+  
+}
+.contact-konten{
+    background-color: #525351;
+}
+.contact-konten img{
+    width: 50%;
+    margin-left: 250px;
+    margin-top: 20px;
+ 
+}
+.contact-konten h1{
+    margin-left: 250px;
+}
+.contact-icon-medsos {
+    margin-left: 250px;
+}
+
+
+/*=======Contact page - Social Media Icons==========*/
+/* Style all font awesome icons */
+.fa {
+    padding: 10px;
+    font-size: 20px;
+    width: 40px;
+    text-align: center;
+    text-decoration: none;
+  }
+  
+  /* Add a hover effect if you want */
+  .fa:hover {
+    opacity: 13;
+  }
+  
+  /* Set a specific color for each brand */
+  
+  /* Facebook */
+  .fa-facebook {
+    background: #3B5998;
+    color: white;
+  }
+  
+  /* Twitter */
+  .fa-twitter {
+    background: #55ACEE;
+    color: white;
+  }
+  /*Instagram*/
+  .fa-instagram {
+    background: #E1306C;
+    color: white;
+  }
+  /*Youtube*/
+  .fa-youtube {
+    background: #FF0000;
+    color: white;
+  }
+ 
+
+
+/*=================== Sidebar======================*/
+aside {
+    position: relative;
+    height:400px;   
+    width: 200px ;
+    padding: 10px;
+    background: #e6e3e3;
+    color: #0c0c0c;
+    top: 5px;
+    bottom: auto;
+    float: right;
+    border-top: 20px solid #3a3939;
+    border-radius: 7%;
+}
+.sidebar p{
+    font-family: Arial, sans-serif;
+    text-align: left;
+    color: #666;
+}
+.sidebar h2{
+    text-align: left;
+    color: black;
+    font: bolder 1em verdana;
+
+}
+/*==========The Top Footer==============*/
+.top-footer{
+    background-color: #0a0a0a;
+    border-top: 2px solid #F45140;
+}
+.f-item-con{
+    padding: 1.5rem 2rem;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    grid-gap: 2rem;
+}
+.app-name{
+    color: white;
+    border-left: 4px solid var(--theme-col);
+    padding-left: 1.5rem;
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+    font-weight: 400;
+}
+.app-info .footer-img{
+    width: 100px;
+    height:  0 auto;
+
+}
+.footer-peta-papua img{
+    margin-bottom: 30px;
+    margin-left: 300px;
+    width: 300px;
+    position: relative;;
+}
+.app-name .app-initial{
+    color: var(--theme-col);
+}
+.app-info p{
+    color: white;
+    padding-left: 1.65rem;
+}
+/*.f-item-con .app-info{
+    border-right: 2px solid #f7f7f7;
+}
+/*.useful-links .footer-title{
+    border-right: 2px solid #f7f7f7;
+}*/
+.top-footer-title{ 
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+    color: white;
+    border-left: 4px solid var(--theme-col);
+    padding-left: 1.5rem;
+    height: fit-content;
+    list-style: none;
+}
+.top-footer-nav{
+    list-style: none;
+}
+.top-footer ul{ 
+    padding-left: 1.75rem;
+    color: white;
+    font-size: 0.875rem/* 14px */;
+    line-height: 1.25rem;
+    margin-top: .5rem;
+}
+.top-footer ul li{ 
+    margin: .25rem 0;
+    cursor: pointer;
+    color: #d4d4d4;
+    width: fit-content;
+}
+.top-footer ul li:hover{
+    color: white;
+}
+.help-sec{
+    grid-column-start: 2;
+    
+}
+
+.g-i-t{
+    display: grid;
+    grid-column-start: 3;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+.g-i-t form{
+    display: flex;
+    flex-direction: column;
+    margin-top: 1rem;
+    --tw-space-y-reverse: 0;
+    margin-top: calc(0.5rem * calc(1 - var(--tw-space-y-reverse)));
+    margin-bottom: calc(0.5rem * var(--tw-space-y-reverse));
+}
+/*======= The Social Media Icons on Top Footer======*/
+.top-footer-medsos-title{ 
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+    color: white;
+    border-left: 4px solid var(--theme-col);
+    padding-left: 1.5rem;
+    height: fit-content;
+    list-style: none;
+}
+/*=======The Website Statistics ( to do next after learning PHP)=====*/
+/*.webstat h4{ 
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+    color: white;
+    border-left: 4px solid var(--theme-col);
+    padding-left: 1.5rem;
+    height: fit-content;
+    list-style: none;
+}
+.webstat p{ 
+    color: white;
+
+}*/
+/*========Kolom Kritik dan Saran=====*/
+/*form .g-inp{
+    padding: .25rem .5rem;
+    font-size: 16px;
+}
+.g-inp textarea{
+    height: 150px;
+}
+.f-btn{
+    padding: .25rem 1rem;
+    background-color: #db5405;
+    border-radius: .25rem;
+    font-size: 16px;
+    color: white;
+    font-weight: 500;
+}*/
+/*=========The Bottom Footer=====*/
+footer .cr-con{
+    background-color: #363444;
+    color: white;
+    padding: 1rem 4rem;
+    text-align: center;
+    border-top: 1.5px solid #f8f7f7;
+}
